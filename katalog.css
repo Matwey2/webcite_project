@@ -1,0 +1,80 @@
+@font-face {
+    font-family: Raleway-regular, sans-serif;
+    src: url(fonts/Raleway-Regular.eot) format(eot);
+    src: url(fonts/Raleway-Regular.woff) format(woff);
+    src: url(fonts/Raleway-Regular.ttf) format(ttf);
+}
+@font-face {
+    font-family: Raleway-bold, sans-serif;
+    src: url(fonts/Raleway-Bold.eot) format(eot);
+    src: url(fonts/Raleway-Bold.woff) format(woff);
+    src: url(fonts/Raleway-Bold.ttf) format(ttf);
+}
+
+.container-one{
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 5% 0 5%;
+    font-size: 16px;
+  }
+  .container-one__second-block_logo{
+    width: 184px;
+    height: 48px;
+  }
+  .container-one__first-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    font-family: Raleway-regular,sans-serif;
+  }
+  .container-one__third-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 23%;
+  }
+  .container-one__second-block{
+    width: 20%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .container-one__first-block_pone{
+    font-family: Raleway-bold, sans-serif;
+    font-size: 16px;
+    color: rgb(218, 31, 57);
+    font-weight: 700;
+    
+  }
+  .container-one__third-block_shop-cart, .container-one__third-block_search{
+    width: 25px;
+    height: 25px;
+  }
+  .container-one__third-block_vectoro{
+    position: relative;
+  }
+  .container-one__third-block_vectoro::after{
+    content: "";
+    background-image: url(images/vector_before.png);
+    background-size: contain;
+    width: 10px;
+    height: 6px;
+    position: absolute;
+    top: 30%;
+    left: 108%;
+  }
+  .container-one__third-block_vectori{
+    position: relative;
+  }
+  .container-one__third-block_vectori::after{
+    content: "";
+    background-image: url(images/vector_before.png);
+    background-size: contain;
+    width: 10px;
+    height: 6px;
+    position: absolute;
+    top: 32%;
+    left: 146%;
+  }
+  
