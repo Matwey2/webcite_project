@@ -224,3 +224,44 @@ label{
   margin-bottom: 10%;
   margin-top: 0%;
 }
+.credentials__container{
+  display: grid;
+  grid-template-columns: 5fr 3.3fr;
+  grid-template-rows: 1fr;
+  place-items: end;
+}
+.credentials__container_pone{
+  font-family: Raleway-bold, sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  position: relative;
+ 
+}
+.credentials__container_pone::after{
+  content: "";
+  background-image: url(images/Vector_3.png);
+  background-size: contain;
+  width: 21px;
+  height: 24px;
+  position: absolute;
+  top: -34%;
+  left: 106%;
+}
+a{
+  color: black;
+}
+.credentials__container_block{
+  font-family: Raleway-bold , sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  width: 12%;
+  position: absolute;
+  right: 5%;
+  grid-area: two;
+}
+.credentials__container_block_p{
+  opacity: 0.5;
+}
