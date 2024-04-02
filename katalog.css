@@ -1,25 +1,45 @@
 @font-face {
-    font-family: Raleway-regular, sans-serif;
-    src: url(fonts/Raleway-Regular.eot) format(eot);
-    src: url(fonts/Raleway-Regular.woff) format(woff);
-    src: url(fonts/Raleway-Regular.ttf) format(ttf);
+  font-family: Raleway-regular, sans-serif;
+  src: url(fonts/Raleway-Regular.eot) format(eot);
+  src: url(fonts/Raleway-Regular.woff) format(woff);
+  src: url(fonts/Raleway-Regular.ttf) format(ttf);
 }
 @font-face {
-    font-family: Raleway-bold, sans-serif;
-    src: url(fonts/Raleway-Bold.eot) format(eot);
-    src: url(fonts/Raleway-Bold.woff) format(woff);
-    src: url(fonts/Raleway-Bold.ttf) format(ttf);
+  font-family: Raleway-bold, sans-serif;
+  src: url(fonts/Raleway-Bold.eot) format(eot);
+  src: url(fonts/Raleway-Bold.woff) format(woff);
+  src: url(fonts/Raleway-Bold.ttf) format(ttf);
 }
-
+@font-face {
+  font-family: Raleway-light;
+  src: url(fonts/Raleway-Light.eot) format(eot);
+  src: url(fonts/Raleway-Light.woff) format(woff);
+  src: url(fonts/Raleway-Light.ttf) format(ttf);
+}
+@font-face {
+  font-family: DeltaGoticOne, sans-serif;
+  src: url(fonts/DelaGothicOne-Regular.eot) format(eot);
+  src: url(fonts/DelaGothicOne-Regular.woff) format(woff);
+  src: url(fonts/DelaGothicOne-Regular.woff2) format(woff2);
+  src: url(fonts/DelaGothicOne-Regular.ttf) format(ttf);
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+img{
+  max-width: 500px;
+}
 .container-one{
     display: flex;
     justify-content: space-between;
     margin: 3% 5% 0 5%;
     font-size: 16px;
+    align-items: center;
   }
   .container-one__second-block_logo{
     width: 184px;
-    height: 48px;
+    height: 50px;
   }
   .container-one__first-block{
     display: flex;
@@ -27,12 +47,15 @@
     align-items: center;
     width: 20%;
     font-family: Raleway-regular,sans-serif;
+
   }
   .container-one__third-block{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 23%;
+    font-family: Raleway-light, sans-serif;
+    font-weight: 400;
   }
   .container-one__second-block{
     width: 20%;
@@ -77,4 +100,127 @@
     top: 32%;
     left: 146%;
   }
-  
+  .section-one{
+    margin: 3% 5% 0 5%;
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    
+  }
+  .section-one__pone, .section-one__ponee{
+    font-family: Raleway-bold, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    position: relative;
+  }
+  .section-one__ptwo{
+    font-family: Raleway-light,sans-serif;
+    font-size: 12px;
+  }
+  .section-one__pone::after{
+    content: "";
+    background-image: url(images/after-sec-one.png);
+    position: absolute;
+    background-size: contain;
+    width: 25px;
+    height: 1.2px;
+    top: 43%;
+    left: 118%;
+  }
+  .section-one__ponee::after{
+    content: "";
+    background-image: url(images/after-sec-one.png);
+    position: absolute;
+    background-size: contain;
+    width: 25px;
+    height: 1.2px;
+    top: 43%;
+    left: 118%;
+  }
+  .section-two{
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 5% 0 5%;
+    
+  }
+ 
+  .section-two__menu_container_p{
+    font-family: Raleway-bold, sans-serif;
+    font-size: 12px;
+    position: relative;
+  }
+  .section-two__menu_container_p::after{
+    content: "";
+    background-image: url(images/vector-upside-down.png);
+    background-size: contain;
+    width: 10px;
+    height: 6px;
+    position: absolute;
+    top: 27%;
+    left: 121%;
+  }
+  .section-two__menu_container_p_other{
+    font-family: Raleway-bold, sans-serif;
+    font-size: 12px;
+    position: relative;
+  }
+  .section-two__menu_container_p_other::after{
+    content: "";
+    background-image: url(images/vector_before.png);
+    background-size: contain;
+    width: 10px;
+    height: 6px;
+    position: absolute;
+    top: 27%;
+    left: 121%;
+  }
+  .section-two__first-picture_container_div{
+    display: flex;
+    justify-content: space-between;
+    width: 39%;
+    margin-bottom: 51px;
+  }
+ 
+  .section-two__second-picture_container_pone{
+    font-family: DeltaGoticOne, sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 140.3%;
+    text-transform: uppercase;
+    margin: 0 0 39px 0;;
+  }
+  .section-two__first-picture_container{
+    display: flex;
+    flex-direction: column;
+  }
+  .section-two__second-picture_container{
+    display: flex;
+    flex-direction: column;
+  }
+  .section-two__menu_container{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .section-two__first-picture_container_div_pone, .section-two__first-picture_container_div_ptwo{
+    font-family: Raleway-light, sans-serif;
+    font-size: 12px;
+    margin-left: -10px;
+  }
+label{
+    font-family: Raleway-light, sans-serif;
+    font-size: 12px;
+  }
+.section-two__first-picture_container_div_pthree{
+  font-family: Raleway-light, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+.section-two__first-picture_container_div_pfour{
+  font-family: Railway-bold, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10%;
+  margin-top: 0%;
+}
