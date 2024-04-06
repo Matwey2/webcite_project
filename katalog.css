@@ -157,7 +157,7 @@ img{
     height: 6px;
     position: absolute;
     top: 27%;
-    left: 121%;
+    left: 48%;
   }
   .section-two__menu_container_p_other{
     font-family: Raleway-bold, sans-serif;
@@ -203,6 +203,7 @@ img{
     flex-direction: column;
     align-items: flex-start;
   }
+
   .section-two__first-picture_container_div_pone, .section-two__first-picture_container_div_ptwo{
     font-family: Raleway-light, sans-serif;
     font-size: 12px;
@@ -346,7 +347,7 @@ footer{
   right: 49%;
   bottom: -23px;
 }
-.adaptive__burger, .adaptive_span, .adaptive_pone, .adaptive-footer, .adaptive-footer__icons{
+.adaptive__burger, #adaptive_checkbox, .adaptive_pone, .adaptive-footer, .adaptive-footer__icons, .section-two__menu_container .adaptive__menu, .adaptive_checkbox_label{
   display: none;
 }
 
@@ -392,7 +393,7 @@ footer{
 }
 }
 @media screen and (max-width: 864px) {
-  .laptop, .footer__block_section-three p:first-child, .footer__block_section-three_icons, .section-two__menu_container , .container-one__first-block_pone, .section-one__pone, .section-one__ponee,
+  .laptop, .footer__block_section-three p:first-child, .footer__block_section-three_icons, .container-one__first-block_pone, .section-one__pone, .section-one__ponee,
   .container-one__third-block_vectori, .container-one__third-block_vectoro, .section-two__second-picture_container_pone, .section-one__pone::after, .section-one__ponee::after,
   .section-two__first-picture_container_div_view-one, .section-two__first-picture_container_div_view-two, .section-two__first-picture_container_div_pone, .section-two__first-picture_container_div_ptwo,
   .credentials__container_block {
@@ -401,7 +402,7 @@ footer{
   .adaptive__burger{
     display: block;
   }
- 
+
   .container-one__first-block{
     width: auto;
   }
@@ -412,8 +413,9 @@ footer{
     max-width:75%;
   }
   .section-two__first-picture_container_div{
-    margin-bottom: 0;
+    margin-bottom: 4%;
     width: auto;
+    justify-content: flex-start;
   }
   .section-one{
     width: 80%;
@@ -424,22 +426,30 @@ footer{
     font-size: 10px; 
     max-width: 100%;
   }
-  .adaptive_span{
+  #adaptive_checkbox{
+    position: absolute;
+    opacity: 0;
     display: block;
-    margin-bottom: 5%;
+    width: 50px;
+    height: 50px;
+    
+  }
+  .label__one{
+    position: relative;
+    display: block;
+    margin-bottom: 1%;
     font-family: Raleway-light, sans-serif;
     font-size: 12px;
-    position: relative;
   }
-  .adaptive_span::after{
+  .label__one::after{
     content: "";
     background-image: url(images/vector_before.png);
     background-size: contain;
     width: 10px;
     height: 6px;
     position: absolute;
-    top: 34%;
-    left: 113%;
+    top: 24%;
+    left: 111%;
   }
 
   .section-one__ptwo{
@@ -523,6 +533,32 @@ footer{
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
+.section-two__menu_container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  background: white;
+  width: 90%;
+  height: 70%;
+  margin-top: 4%;
+  display: none;
+}
+.section-two__menu_container p{
+  font-size: 14px;
+}
+.section-two__menu_container > div{
+  width: 50%;
+}
+.section-two__menu_container .adaptive__menu{
+  display: flex;
+}
+.section-two__menu_container_p_other::after, .section-two__menu_container_p::after{
+  display: none;
+}
+label{
+  font-size: 14px;
+}
+
 }
 @media screen and (max-width: 1350px) and (min-width: 1216px) {
   .section-one__pone::after, .section-one__ponee::after {
