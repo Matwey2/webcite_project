@@ -347,7 +347,7 @@ footer{
   right: 49%;
   bottom: -23px;
 }
-.adaptive__burger, #adaptive_checkbox, .adaptive_pone, .adaptive-footer, .adaptive-footer__icons, .section-two__menu_container .adaptive__menu, .adaptive_checkbox_label{
+.adaptive__burger, #adaptive_checkbox, .adaptive_pone, .adaptive-footer, .adaptive-footer__icons, .section-two__menu_container .adaptive__menu, .label__one{
   display: none;
 }
 
