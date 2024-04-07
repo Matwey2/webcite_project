@@ -399,16 +399,16 @@ footer{
   .credentials__container_block {
     display: none;
   }
-  .adaptive__burger{
-    display: block;
-  }
+    .adaptive__burger{
+      display: block;
+    }
 
-  .container-one__first-block{
-    width: auto;
-  }
-  .container-one__third-block{
-    width: 9%;
-  }
+    .container-one__first-block{
+      width: auto;
+    }
+    .container-one__third-block{
+      width: 9%;
+    }
   .big_img{
     max-width:75%;
   }
@@ -446,7 +446,7 @@ footer{
     background-image: url(images/vector_before.png);
     background-size: contain;
     width: 10px;
-    height: 6px;
+    height: 5px;
     position: absolute;
     top: 24%;
     left: 111%;
@@ -568,6 +568,7 @@ label{
   top: 24%;
   left: 111%;
 }
+
 
 }
 @media screen and (max-width: 1350px) and (min-width: 1216px) {

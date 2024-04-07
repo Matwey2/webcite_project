@@ -1,0 +1,227 @@
+@font-face {
+    font-family: Raleway-regular, sans-serif;
+    src: url(fonts/Raleway-Regular.eot) format(eot);
+    src: url(fonts/Raleway-Regular.woff) format(woff);
+    src: url(fonts/Raleway-Regular.ttf) format(ttf);
+  }
+  @font-face {
+    font-family: Raleway-bold, sans-serif;
+    src: url(fonts/Raleway-Bold.eot) format(eot);
+    src: url(fonts/Raleway-Bold.woff) format(woff);
+    src: url(fonts/Raleway-Bold.ttf) format(ttf);
+  }
+  @font-face {
+    font-family: Raleway-light;
+    src: url(fonts/Raleway-Light.eot) format(eot);
+    src: url(fonts/Raleway-Light.woff) format(woff);
+    src: url(fonts/Raleway-Light.ttf) format(ttf);
+  }
+  @font-face {
+    font-family: DeltaGoticOne, sans-serif;
+    src: url(fonts/DelaGothicOne-Regular.eot) format(eot);
+    src: url(fonts/DelaGothicOne-Regular.woff) format(woff);
+    src: url(fonts/DelaGothicOne-Regular.woff2) format(woff2);
+    src: url(fonts/DelaGothicOne-Regular.ttf) format(ttf);
+  }
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  .container-one{
+      display: flex;
+      justify-content: space-between;
+      margin: 3% 5% 2% 5%;
+      font-size: 16px;
+      align-items: center;
+    }
+    .container-one__second-block_logo{
+      width: 184px;
+      height: 50px;
+    }
+    .container-one__first-block{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 20%;
+      font-family: Raleway-regular,sans-serif;
+  
+    }
+    .container-one__third-block{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 23%;
+      font-family: Raleway-light, sans-serif;
+      font-weight: 400;
+    }
+    .container-one__second-block{
+      width: 20%;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+    .container-one__first-block_pone{
+      font-family: Raleway-bold, sans-serif;
+      font-size: 16px;
+      color: rgb(218, 31, 57);
+      font-weight: 700;
+      
+    }
+    .container-one__third-block_shop-cart, .container-one__third-block_search{
+      width: 25px;
+      height: 25px;
+    }
+    .container-one__third-block_vectoro{
+      position: relative;
+    }
+    .container-one__third-block_vectoro::after{
+      content: "";
+      background-image: url(images/vector_before.png);
+      background-size: contain;
+      width: 10px;
+      height: 6px;
+      position: absolute;
+      top: 30%;
+      left: 108%;
+    }
+    .container-one__third-block_vectori{
+      position: relative;
+    }
+    .container-one__third-block_vectori::after{
+      content: "";
+      background-image: url(images/vector_before.png);
+      background-size: contain;
+      width: 10px;
+      height: 6px;
+      position: absolute;
+      top: 32%;
+      left: 146%;
+    }
+    .adaptive__burger{
+        display: none;
+    }
+    .section__one__first-div{
+        background-image: url(images/glavnaya_1.png);
+        background-size: cover;
+        margin: 0 5% 7% 5%;
+    }
+    .section__one__first-div_h2{
+        font-family: DeltaGoticOne, sans-serif;
+        font-size: 64px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 10% 0 0 6%;
+        margin: 0 ;
+        line-height: 93px;
+    }
+    .section__one__first-div_pone{
+        font-family: Raleway-regular, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+        padding: 0 0 0 6%;
+    }
+    .section__one__first-div_button{
+        background-color: rgb(218, 31, 57);
+        color: white;
+        text-transform: uppercase;
+        font-family: Raleway-regular, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        border-width: 0;
+        margin: 0 0 10% 6%;
+        width: 225px;
+        height: 50px;
+    }
+    .section__one__second-div_img{
+        max-width: 100%;
+        margin: auto;
+    }
+    .section__one__second-div{
+        width: 60%;
+        margin: auto;
+    }
+    .section__two__scroll{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 3% 5% 5% 5%;
+    }
+    .section__two__scroll h4{
+        font-family: DeltaGoticOne, sans-serif;
+        font-size: 36px;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+    #scroll-left, #scroll-right{
+        background: none;
+        border: none;
+    }
+    #scroll-left img, #scroll-right img{
+        width: 50px;
+    }
+    .section__two__images{
+        overflow-x: hidden;  
+        white-space: nowrap;
+        margin-left: 5%;
+    }
+    .section__two__images p{
+        font-family: Raleway-light, sans-serif;
+        font-size: 1.1vw;
+    }
+    .section__two__images > div{
+        max-width: 25%;
+        display: inline-block;
+        padding-right: 3%;
+        max-height: 446px;
+        
+    }
+    .section__two__images  img{
+        max-width: 100%;
+        max-height: 368px;
+        
+    }
+    .inside-div-fon{
+        background-image: url(images/fon_foto2.png);
+        
+        
+    }
+    .inside-div-fon img{
+        width: 80%;
+        padding: 10% 10% 10% 10%;
+        max-height: 300px;
+    }
+    .section__two__images .section__two__images_bold{
+        font-family: Raleway-bold, sans-serif;
+        font-weight: 700;
+    }
+
+
+
+
+
+    @media screen and (max-width: 1215px) and (min-width: 864px){
+        .container-one__third-block {
+            width: 34%;
+        }
+        .container-one__first-block{
+            width: 29%;
+          }
+        
+    }
+    @media screen and (max-width: 864px){
+    .adaptive__burger{
+        display: block;
+      }
+    
+      .container-one__first-block{
+        width: auto;
+      }
+      .container-one__third-block{
+        width: 9%;
+      }
+      .laptop, .container-one__first-block_pone, .section-one__pone, .section-one__ponee, .container-one__third-block_vectoro, .container-one__third-block_vectori{
+    display: none;
+  }
+    }
