@@ -142,42 +142,42 @@
         width: 60%;
         margin: auto;
     }
-    .section__two__scroll{
+    .section__two__scroll, .section__three__scroll{
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 3% 5% 5% 5%;
     }
-    .section__two__scroll h4{
+    .section__two__scroll h4, .section__three__scroll h4{
         font-family: DeltaGoticOne, sans-serif;
         font-size: 4vw;
         text-transform: uppercase;
         font-weight: 400;
     }
-    #scroll-left, #scroll-right{
+    #scroll-left, #scroll-right, #scroll-left-two, #scroll-right-two{
         background: none;
         border: none;
     }
-    #scroll-left img, #scroll-right img{
+    #scroll-left img, #scroll-right img, #scroll-right-two img, #scroll-left-two img{
         width: 50px;
     }
-    .section__two__images{
+    .section__two__images, .section__three__images{
         overflow-x: hidden;  
         white-space: nowrap;
         margin: 0 0 5% 5%;
     }
-    .section__two__images p{
+    .section__two__images p, .section__three__images p{
         font-family: Raleway-light, sans-serif;
         font-size: 1.1vw;
     }
-    .section__two__images > div{
+    .section__two__images > div, .section__three__images > div{
         max-width: 25%;
         display: inline-block;
         padding-right: 3%;
         max-height: 446px;
         
     }
-    .section__two__images  img{
+    .section__two__images  img, .section__three__images img{
         max-width: 100%;
         max-height: 368px;
         
@@ -187,14 +187,19 @@
         
         
     }
-    .inside-div-fon img{
+    .inside-div-fon img, .inside-div-fon-two img{
         width: 80%;
         padding: 10% 10% 10% 10%;
         max-height: 300px;
     }
-    .section__two__images .section__two__images_bold{
+    .section__two__images .section__two__images_bold {
         font-family: Raleway-bold, sans-serif;
         font-weight: 700;
+    }
+    .section__three__images .section__three__images_bold{
+        font-family: Raleway-bold, sans-serif;
+        font-weight: 700;
+        color: red;
     }
 
     .section__three__div{
@@ -263,6 +268,17 @@
         max-width: 50vw;
     }
 
+    .inside-div-fon-two{
+      background-image: url(images/fon3-2.png);
+      background-size: contain;
+     
+    }
+    .line-through{
+      text-decoration: line-through;
+      color: rgb(147, 150, 148);
+      margin-left: 10px;
+    }
+    
 
 
     @media screen and (max-width: 1215px) and (min-width: 864px){

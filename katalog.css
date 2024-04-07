@@ -539,7 +539,7 @@ footer{
   flex-direction: row;
   background: white;
   width: 90%;
-  height: 70%;
+  height: 105%;
   margin-top: 4%;
   display: none;
 }
@@ -562,7 +562,7 @@ label{
   content: "";
   background-image: url(images/vector-upside-down.png); 
   background-size: contain;
-  width: 10px;
+  width: 8px;
   height: 5px;
   position: absolute;
   top: 24%;
