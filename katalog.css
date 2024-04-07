@@ -558,6 +558,16 @@ footer{
 label{
   font-size: 14px;
 }
+#adaptive_checkbox:checked + .label__one::after {
+  content: "";
+  background-image: url(images/vector-upside-down.png); 
+  background-size: contain;
+  width: 10px;
+  height: 5px;
+  position: absolute;
+  top: 24%;
+  left: 111%;
+}
 
 }
 @media screen and (max-width: 1350px) and (min-width: 1216px) {
