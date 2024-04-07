@@ -107,13 +107,13 @@
     }
     .section__one__first-div_h2{
         font-family: DeltaGoticOne, sans-serif;
-        font-size: 64px;
+        font-size: 7vw;
         color: white;
         text-transform: uppercase;
         font-weight: 400;
         padding: 10% 0 0 6%;
         margin: 0 ;
-        line-height: 93px;
+        line-height: 11vw;
     }
     .section__one__first-div_pone{
         font-family: Raleway-regular, sans-serif;
@@ -150,7 +150,7 @@
     }
     .section__two__scroll h4{
         font-family: DeltaGoticOne, sans-serif;
-        font-size: 36px;
+        font-size: 4vw;
         text-transform: uppercase;
         font-weight: 400;
     }
@@ -164,7 +164,7 @@
     .section__two__images{
         overflow-x: hidden;  
         white-space: nowrap;
-        margin-left: 5%;
+        margin: 0 0 5% 5%;
     }
     .section__two__images p{
         font-family: Raleway-light, sans-serif;
@@ -197,7 +197,71 @@
         font-weight: 700;
     }
 
+    .section__three__div{
+        display: flex;
+        padding: 5% 5% 0 5%;
+        margin: auto;
+        background-image: url(images/fon2.png);
+        background-size: 100% 85%;
+        background-repeat: no-repeat;
+        
+    }
+    .section__three__div_first{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        text-align: center;
+        align-items: center;
+        width: 120%;
+    }
+    .section__three__div_first h4{
+        font-size: 1.5vw;
+        font-family: Raleway-regular, sans-serif;
+        font-weight: 300;
+        max-width: 70%;
+        opacity: 0.7;
+    }
+    .section__three__div_first button{
+        background-color: rgb(218, 31, 57);
+        color: white;
+        text-transform: uppercase;
+        font-family: Raleway-regular, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        border-width: 0;
+        margin: 0 0 10% 6%;
+        width: 225px;
+        height: 50px;
+    }
+    
+    .section__three__div_first_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .section__three__div_first_container h2{
+        font-family: DeltaGoticOne, sans-serif;
+        max-width: 80%;
+        font-size: 2.5vw;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 10%;
+        font-weight: 400;
+        text-align: center;
+    }
 
+    .section__three__div_first_container p{
+        font-family: Raleway-regular, sans-serif;
+        font-size: 1.5vw;
+        opacity: 0.6;
+        text-transform: uppercase;
+        margin-bottom: 1%;
+    }
+    .section__three__div_second img{
+        max-width: 50vw;
+    }
 
 
 
