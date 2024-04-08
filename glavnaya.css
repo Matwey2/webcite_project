@@ -323,7 +323,7 @@
       max-width: 60%;
       margin-bottom: 5%;
     }
-    .section__four__div_second a{
+    .section__four__div_second a {
       color: rgb(218, 31, 57);
       font-family: Raleway-regular, sans-serif;
       font-size: 1.3vw;
@@ -389,7 +389,84 @@
       width: 16vw;
       height: 4vw;
     }
-  
+    .time{
+      position: relative;
+    }
+    .time::before{
+      content: "";
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      background-image: url(images/clock-svgrepo-com.svg);
+      left: -4%;
+    }
+    .location{
+      position: relative;
+    }
+
+    .location::before{
+      content: "";
+      width: 15px;
+      height: 18px;
+      position: absolute;
+      background-image: url(images/location.png);
+      left: -4%;
+    }
+    .arrow_a_two{
+      position: relative;
+    }
+    .arrow_a_two::after{
+      content: "";
+      position: absolute;
+      width: 176%;
+      height: 7px;
+      background-image: url(images/Arrow_2.png);
+      top: 1.3vw;
+      left: 0.2vw;
+      min-width: 194px;
+      max-width: 195px;
+    }
+    .section__five__container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .forest{
+      max-width: 55vw;
+    }
+   .section__five__container_first h2{
+      font-family: DeltaGoticOne, sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 2.5vw ;
+      max-width: 70%;
+      margin-left: 7%;
+   }
+   .section__five__container_first p{
+      font-family: Raleway-light, sans-serif;
+      font-size: 1vw;
+      margin-left: 11%
+   }
+   .section__five__container_first a{
+      color: rgb(218, 31, 57);
+      font-family: Raleway-regular, sans-serif;
+      font-size: 1vw;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-left: 7%;
+   }
+   .bottom{
+      margin-bottom: 7%;
+   }
+   .section__five__container_second{
+     position: relative;
+   }
+   .party{
+    position: absolute;
+    top: 4vw;
+    left: -9vw;
+    max-width: 46vw;
+   }
     
 
 
