@@ -97,7 +97,7 @@
       top: 32%;
       left: 146%;
     }
-    .adaptive__burger{
+    .adaptive__burger,.adaptive-footer, .adaptive-footer__icons{
         display: none;
     }
     .section__one__first-div{
@@ -350,6 +350,7 @@
     }
     .friends{
       max-width: 100%;
+      margin-bottom: 10%;
     }
     .section__five__first{
       background-image: url(images/fon_5_main.png);
@@ -430,6 +431,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      margin-bottom: 5%;
     }
     .forest{
       max-width: 55vw;
@@ -467,7 +469,112 @@
     left: -9vw;
     max-width: 46vw;
    }
+   .section__six__container{
+    max-width: 100%;
+    margin: 0 7% 7% 7%;
+    display: flex;
+    flex-direction: column;
+   }
+   .section__six__container_first{
+    text-align: center;
+   }
+   .section__six__container_first h4{
+    color: rgb(147, 150, 148);
+    font-family: Raleway-light, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-size: 1.5vw;
+   }
+   .section__six__container_first h2{
+    font-family: DeltaGoticOne, sans-serif;
+    font-weight: 400;
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    margin-top: 0;
+    line-height: 140%;
+   }
+   .section__six__container_first p{
+    font-family: Raleway-light, sans-serif;
+    font-weight: 400;
+    font-size: 1.5vw;
+    margin-bottom: 5%;
+   }
+   .section__six__container_second img{
+    max-width: 20vw;
+   }
+   .section__six__container_second{
+    display: flex;
+    justify-content: space-between;
+   }
     
+   footer{
+    background-color: rgb(244, 244, 244);
+    font-family: Raleway-light, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .footer__div{
+    width: 148px;
+    margin: auto;
+    padding-top: 5%;
+  }
+  .footer__div_logo{
+    width: 148px;
+  }
+  .small-icon{
+    width: 16.5px;
+    height: 16.5px;
+  }
+  .footer__block{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10% 0 5%;
+  }
+  .footer__block_section-one{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 2fr;
+    column-gap: 5px;
+  }
+  .footer__block_section-one_p{
+    color: red;
+    font-weight: 700;
+    font-family: Raleway-bold, sans-serif;
+    margin-top: 23%;
+  }
+  .footer__block_section-two{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__block_section-two p{
+    margin-bottom: 1%;
+  }
+  .footer__block_section-two_time{
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__block_section-three_icons{
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__block_section-three_pone{
+    margin-top: 67%;
+  }
+  
+  .credentials__container{
+    margin-bottom: 10%;
+  }
+  .footer__arrow{
+    position: relative;
+  }
+  .arrow{
+    position: absolute;
+    width: 30px;
+    height: 56.5px;
+    right: 49%;
+    bottom: -23px;
+  }
 
 
     @media screen and (max-width: 1215px) and (min-width: 864px){
@@ -490,7 +597,46 @@
       .container-one__third-block{
         width: 9%;
       }
-      .laptop, .container-one__first-block_pone, .section-one__pone, .section-one__ponee, .container-one__third-block_vectoro, .container-one__third-block_vectori{
+      .laptop, .container-one__first-block_pone, .section-one__pone, .section-one__ponee, .container-one__third-block_vectoro, .container-one__third-block_vectori {
     display: none;
+  }
+  .footer__block{
+    display: block;
+   }
+   .adaptive-footer{
+    display: block;
+  }
+  .footer__block_section-one{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+  }
+  .footer__block_section-one_p{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  .adaptive-footer__icons{
+    display: flex;
+    justify-content: space-between;
+    grid-column: 3 ;
+  }
+  .footer__block_section-two {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr;
+  }
+  .footer__block_section-two_time {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 61%;
+  }
+  .footer__block_section-three_pone{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
   }
     }
