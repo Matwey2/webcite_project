@@ -32,13 +32,15 @@
             </div>
 
             <div class="container-one__third-block">
-                <p class="container-one__third-block_vectoro">
-                    UA
-                </p>
+                <select class="container-one__third-block_vectoro" name="language">
+                   <option value="UA">UA</option> 
+                   <option value="EN">EN</option>
+                </select>
 
-                <p class="container-one__third-block_vectori">
-                    ₴
-                </p>
+                <select class="container-one__third-block_vectori" name="currency">
+                    <option value="₴">₴</option>
+                    <option value="$">$</option>
+                </select>
 
                 <p class="laptop">
                     +38 097 888 92 92
@@ -77,6 +79,7 @@
                         Розмір
                     </p>
                     <div>
+                
                     <input type="checkbox" name="size" id="xxs" >
                     <label class="size" for="xxs">32 | XXS (53)</label>
                     </div>
@@ -189,9 +192,10 @@
                     <p class="section-two__first-picture_container_div_pone">
                         Сортувати за:
                     </p>
-                    <p class="section-two__first-picture_container_div_ptwo">
-                        новинки 
-                    </p>
+                    <select class="section-two__first-picture_container_div_ptwo" name="sort">
+                        <option value="new">новинки </option>
+                        <option value="name">назва</option>
+                    </select>
                     <input type="checkbox" id="adaptive_checkbox">
                     <label for="adaptive_checkbox" class="label__one">Фільтри</label> 
                 </div>
@@ -214,7 +218,10 @@
                     Жіночі вишиванки
                 </p>
                 <p class="adaptive_pone">
-                    Сортувати за <span class="adaptive_span_two">: новинки</span>
+                    Сортувати за :<select class="adaptive_span_two" name="sort"> 
+                        <option value="new">новинки</option>
+                        <option value="name">назва</option>
+                        </select>
                 </p>
                 <img src="images/img2.png" alt="vishivanka" class="big_img">
                 <p class="section-two__first-picture_container_div_pthree">Вишиванка блакитного кольору з рослинним орнаментом Fialka</p>

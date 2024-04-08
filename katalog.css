@@ -76,6 +76,7 @@ img{
   }
   .container-one__third-block_vectoro{
     position: relative;
+    border: none;
   }
   .container-one__third-block_vectoro::after{
     content: "";
@@ -89,6 +90,7 @@ img{
   }
   .container-one__third-block_vectori{
     position: relative;
+    border: none;
   }
   .container-one__third-block_vectori::after{
     content: "";
@@ -208,6 +210,7 @@ img{
     font-family: Raleway-light, sans-serif;
     font-size: 12px;
     margin-left: -10px;
+    border: none;
   }
 .section-two__first-picture_container_div_ptwo{
   position: relative;
@@ -465,6 +468,9 @@ footer{
  }
  .adaptive_span_two{
   position: relative;
+  border: none;
+  font-family: Raleway-light, sans-serif;
+  font-size: 12px;
  }
  .adaptive_span_two::after{
   content: "";
