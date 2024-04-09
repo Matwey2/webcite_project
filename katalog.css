@@ -49,6 +49,15 @@ img{
     font-family: Raleway-regular,sans-serif;
 
   }
+  .container-one__first-block a{
+    text-decoration: none;
+    color: black;
+  }
+  .container-one__first-block_pone a{
+    color: red;
+  }
+ 
+  
   .container-one__third-block{
     display: flex;
     justify-content: space-between;

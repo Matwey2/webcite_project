@@ -12,7 +12,7 @@
             <div class="container-one__first-block">
                 
                 <p class="container-one__first-block_pone">
-                    Каталог
+                    <a href="katalog.html">Каталог</a>
                 </p>
                 <p class="laptop">
                     Знижки
@@ -21,7 +21,7 @@
                     Блог
                 </p>
                 <p class="laptop">
-                    Про нас
+                   <a href="glavnaya.html"> Про нас </a>
                 </p>
                 
                 <img src="images/burger.png" alt="burger" class="adaptive__burger">
@@ -32,13 +32,15 @@
             </div>
 
             <div class="container-one__third-block">
-                <p class="container-one__third-block_vectoro">
-                    UA
-                </p>
+                <select class="container-one__third-block_vectoro" name="language">
+                   <option value="UA">UA</option> 
+                   <option value="EN">EN</option>
+                </select>
 
-                <p class="container-one__third-block_vectori">
-                    ₴
-                </p>
+                <select class="container-one__third-block_vectori" name="currency">
+                    <option value="₴">₴</option>
+                    <option value="$">$</option>
+                </select>
 
                 <p class="laptop">
                     +38 097 888 92 92
@@ -73,8 +75,8 @@
                 Нові надходження
             </h4>
             <div>
-                 <button id="scroll-left"><img src="images/arrow_left.png" alt="scroll" ></button>
-                 <button id="scroll-right"><img src="images/arrow_right.png" alt="scroll" ></button>
+                 <button id="scroll-left"><img src="images/arrow_left.png" alt="scroll" class="button_laptop"> <img src="images/arrow-left-adaptive.png" alt="scroll" class="button_adaptive"></button>
+                 <button id="scroll-right"><img src="images/arrow_right.png" alt="scroll" class="button_laptop"><img src="images/arrow-right-adaptive.png" alt="scroll" class="button_adaptive"></button>
             </div>
         </div>
 
@@ -115,25 +117,34 @@
                     <h2>капсульна колекція до дня вишиванки</h2>
                 </div>
                 
-                    <h4>Лімітована серія нетипових вишиванок Etnodim створена спеціально до Дня вишиванки. Поряд із традиційною вишивкою на виробах з’явилися «нові символи»</h4>
+                    <h4 class="laptop">Лімітована серія нетипових вишиванок Etnodim створена спеціально до Дня вишиванки. Поряд із традиційною вишивкою на виробах з’явилися «нові символи»</h4>
                 
-                    <button >Переглянути</button>
+                    <button class="laptop">Переглянути</button>
                 
             </div>
 
+          
+
             <div class="section__three__div_second">
-                <img src="images/foto_section3.png" alt="vishivanka">
+                <img src="images/foto_section3.png" alt="vishivanka" class="laptop">
+                <img src="images/adaptive-foto-1.png" alt="vishivanka" class="mobile">
             </div>
         </div>
     
+        <div class="section__three__adaptiv">
+            <h4 class="adaptiv">Лімітована серія нетипових вишиванок Etnodim створена спеціально до Дня вишиванки. Поряд із традиційною вишивкою на виробах з’явилися «нові символи»</h4>
+            
+            <button class="adaptiv">Переглянути</button>
+
+        </div>
 
     <div class="section__three__scroll">
         <h4>
             знижки
         </h4>
         <div>
-             <button id="scroll-left-two"><img src="images/arrow_left.png" alt="scroll" ></button>
-             <button id="scroll-right-two"><img src="images/arrow_right.png" alt="scroll" ></button>
+             <button id="scroll-left-two"><img src="images/arrow_left.png" alt="scroll" class="button_laptop"> <img src="images/arrow-left-adaptive.png" alt="scroll" class="button_adaptive"></button>
+             <button id="scroll-right-two"><img src="images/arrow_right.png" alt="scroll" class="button_laptop"> <img src="images/arrow-right-adaptive.png" alt="scroll" class="button_adaptive"></button>
         </div>
     </div>
 
@@ -200,7 +211,11 @@
                 </div>
             </div>
         </div>
-
+        <div class="section__five__adaptive">
+            <p>Проект DRABYNA – це платформа для реалізації ідей молодих дизайнерів. Кращі моделі будуть спільно реалізовані дизайнером та командою ETNODIM.</p>
+            <p>Надсилайте свої роботи до 25 числа кожного місяця. Після цієї дати ми підводимо підсумок та оголошуємо імена обраних.</p>
+            <button>Дізнатись більше</button>
+        </div>
         <div class="section__five__container">
             <div class="section__five__container_first">
                 <h2>завітайте до нашого магазину</h2>

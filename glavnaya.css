@@ -30,7 +30,7 @@
   .container-one{
       display: flex;
       justify-content: space-between;
-      margin: 3% 5% 2% 5%;
+      margin: 3% 8% 2% 5%;
       font-size: 16px;
       align-items: center;
     }
@@ -46,6 +46,15 @@
       font-family: Raleway-regular,sans-serif;
   
     }
+    .container-one__first-block a{
+      text-decoration: none;
+      color: black;
+    }
+   
+    .container-one__first-block_pone a{
+      color: red;
+    }
+   
     .container-one__third-block{
       display: flex;
       justify-content: space-between;
@@ -73,6 +82,7 @@
     }
     .container-one__third-block_vectoro{
       position: relative;
+      border: none;
     }
     .container-one__third-block_vectoro::after{
       content: "";
@@ -86,6 +96,7 @@
     }
     .container-one__third-block_vectori{
       position: relative;
+      border: none;
     }
     .container-one__third-block_vectori::after{
       content: "";
@@ -108,7 +119,7 @@
     }
     .section__one__first-div_h2{
         font-family: DeltaGoticOne, sans-serif;
-        font-size: 7vw;
+        font-size: 5vw;
         color: white;
         text-transform: uppercase;
         font-weight: 400;
@@ -169,9 +180,10 @@
     }
     .section__two__images p, .section__three__images p{
         font-family: Raleway-light, sans-serif;
-        font-size: 1.1vw;
+        font-size: 0.9vw;
         word-wrap: break-word;
         max-width: 100%;
+        white-space: pre-wrap;
     }
     .section__two__images > div, .section__three__images > div{
         max-width: 25%;
@@ -182,7 +194,7 @@
     }
     .section__two__images  img, .section__three__images img{
         max-width: 100%;
-        max-height: 368px;
+        max-height: 360px;
         
     }
     .inside-div-fon{
@@ -223,14 +235,14 @@
         align-items: center;
         width: 120%;
     }
-    .section__three__div_first h4{
+    .section__three__div_first h4, .section__three__adaptiv h4{
         font-size: 1.5vw;
         font-family: Raleway-regular, sans-serif;
         font-weight: 300;
         max-width: 70%;
         opacity: 0.7;
     }
-    .section__three__div_first button{
+    .section__three__div_first button, .section__three__adaptiv button{
       background-color: rgb(218, 31, 57);
       color: white;
       text-transform: uppercase;
@@ -379,7 +391,7 @@
       max-width: 39%;
       background-size: 90%;
     }
-    .section__five__first_inside_main button{
+    .section__five__first_inside_main button, .section__five__adaptive button{
       background-color: rgb(218, 31, 57);
       color: white;
       text-transform: uppercase;
@@ -400,7 +412,7 @@
       height: 16px;
       position: absolute;
       background-image: url(images/clock-svgrepo-com.svg);
-      left: -4%;
+      left: -2vw;
     }
     .location{
       position: relative;
@@ -412,7 +424,7 @@
       height: 18px;
       position: absolute;
       background-image: url(images/location.png);
-      left: -4%;
+      left: -2vw;
     }
     .arrow_a_two{
       position: relative;
@@ -577,6 +589,9 @@
     bottom: -23px;
   }
 
+  .button_adaptive, .section__three__adaptiv, .mobile, .section__five__adaptive{
+    display: none;
+  }
 
     @media screen and (max-width: 1215px) and (min-width: 864px){
         .container-one__third-block {
@@ -585,10 +600,104 @@
         .container-one__first-block{
             width: 29%;
           }
+          
+    }
+    @media screen and (max-width: 640px){
+      .section__five__adaptive{
+        display: block;
         
+      }
+      .section__four__div{
+        flex-direction: column;
+        
+      }
+      .section__four__div_first img{
+        max-width: 300px;
+        max-height: 300px;
+      }
+      .section__four__div_first_imgtwo {
+        position: absolute;
+        top: 8vw;
+        left: 26vw;
+      }
+      .section__four__div_first{
+        margin-bottom: 10%;
+      }
+      .section__four__div_second p{
+        font-size: 14px;
+        max-width: 90%;
+      }
+      .section__four__div_second h4{
+        font-size: 10px;
+      }
+      .section__four__div_second h2{
+        font-size: 18px;
+      }
+      .arrow_a::after{
+        top: 4vw;
+      }
+      .section__four__div_second a{
+        font-size: 14px;
+      }
+      .section__four__div-sec{
+        max-width: 90%;
+      }
+      .section__five__first_inside{
+        height: 200px;
+        margin-bottom: 0;
+      }
+      .section__five__first_inside_main p, .section__five__first_inside_main button{
+        display: none;
+      }
+      .section__five__first_inside_main{
+        height: 60%;
+      }
+      .section__five__adaptive{
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: white;
+        background-size: 90%;
+        margin-top: 0;
+      }
+      .section__five__adaptive button{
+        width: 215px;
+        height: 50px;
+        font-size: 14px;
+      }
+      .section__five__adaptive p{
+        font-family: Raleway-light, sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        max-width: 90%;
+        margin-bottom: 5%;
+      }
+      .section__six__container_second{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 15px;
+        margin-bottom: 10%;
+      }
+      .section__six__container_second img {
+        max-width: 44vw;
+       }
+       .section__six__container_first h4{
+        font-size: 10px;
+       }
+       .section__six__container_first h2{
+        font-size: 18px;
+       }
+       .section__six__container_first p{
+        font-size: 14px;
+       }
+        
+                     
     }
     @media screen and (max-width: 864px){
-    .adaptive__burger{
+    .adaptive__burger, .button_adaptive, .mobile{
         display: block;
       }
     
@@ -598,21 +707,131 @@
       .container-one__third-block{
         width: 9%;
       }
-      .laptop, .container-one__first-block_pone, .section-one__pone, .section-one__ponee, .container-one__third-block_vectoro, .container-one__third-block_vectori, .footer__block_section-three_icons, .footer__block_section-three p:first-child {
+      .laptop, .container-one__first-block_pone, .section-one__pone, .section-one__ponee, .container-one__third-block_vectoro, .container-one__third-block_vectori, .footer__block_section-three_icons, .footer__block_section-three p:first-child, .button_laptop {
     display: none;
   }
-      .section__one__first-div{
-        background-size: 100% 200%;
-      }
+      
       .section__one__first-div h2{
         font-size:24px;
+        
       }
+      .section__one__first-div{
+        background-image: url(images/fon_adaptiv_2.png);
+        height: 400px;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .section__one__first-div_pone{
+        font-size: 14px;
+      }
+      .section__one__first-div button{
+        background-color: rgb(218, 31, 57);
+        color: white;
+        text-transform: uppercase;
+        font-family: Raleway-regular, sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        border-width: 0;
+        margin: 0 0 10% 6%;
+        width: 225px;
+        height: 50px;
+      }
+      .section__one__second-div{
+        width: 90%;
+      }
+      .inside-div-fon img, .inside-div-fon-two img{
+        width: 84%;
+        padding: 10% 6% 10% 8%;
+        max-height: 370px;
+      }
+      .section__two__images > div, .section__three__images > div{
+        max-width: 100%;
+        display: inline-block;
+        padding-right: 3%;
+        max-height: 446px;
+      }
+      .section__two__images img, .section__three__images img{
+        max-width: 100%;
+        max-height: 370px;
+      }
+      .inside-div-fon {
+        max-height: 374px;
+      }
+      .section__two__images p, .section__three__images p{
+        font-size: 14px;
+      }
+      .inside-div-fon-two{
+        max-height: 374px;
+      }
+      .inside-div-fon-two .foto3-2{
+        padding: 2.5% 6% 10% 8%;
+      }
+      #scroll-left img, #scroll-right img, #scroll-right-two img, #scroll-left-two img{
+        width: 40px;
+      }
+      .section__three__div_first_container h2{
+        font-size: 18px;
+      }
+      .section__three__div_second img {
+        max-width: 40vw
+      }
+      .section__three__div_first_container h2{
+        font-size: 3vw;
+      }
+      .section__three__div_first_container p{
+        font-size: 2vw;
+      }
+      .section__three__adaptiv{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+      .section__three__adaptiv h4{
+        font-size: 14px;
+        max-width: 322px;
+      }
+      .section__three__adaptiv button{
+        width: 215px;
+        height: 50px;
+        font-size: 14px;
+      }
+      .section__five__container{
+        flex-direction: column-reverse;
+        align-items: normal;
+      }
+      .section__five__container_second{
+        display: flex;
+        justify-content: flex-end;
+      }
+      .section__five__container_first {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: start;
 
-
-
-
-
-
+      }
+      .party{
+        position: absolute;
+        top: 4vw;
+        left: 21vw;
+        max-width: 46vw;
+      }
+      .section__five__container_first h2{
+        font-size: 18px;
+        max-width: 100%;
+      }
+      .section__five__container_first p, .section__five__container_first a{
+        font-size: 14px;
+      }
+      .arrow_a_two::after{
+        top: 4.3vw;
+      }
+      .location::before, .time::before{ 
+        left: -5vw;
+      }
   .footer__block{
     display: block;
    }
@@ -653,3 +872,19 @@
     margin-inline-end: 0px;
   }
     }
+    @media  screen and (max-width: 325px) {
+      .section__two__scroll, .section__three__scroll{
+        position: relative;
+      }
+      #scroll-left, #scroll-left-two{
+        position: absolute;
+        top: 482%;
+        left: -7%;
+      }
+      #scroll-right, #scroll-right-two{
+        position: absolute;
+        top: 482%;
+        left: 89%;
+      }
+    }
+   
