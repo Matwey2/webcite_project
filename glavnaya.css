@@ -194,7 +194,7 @@
     }
     .section__two__images  img, .section__three__images img{
         max-width: 100%;
-        max-height: 360px;
+        
         
     }
     .inside-div-fon{
@@ -205,7 +205,7 @@
     .inside-div-fon img, .inside-div-fon-two img{
         width: 80%;
         padding: 10% 10% 10% 10%;
-        max-height: 300px;
+       
     }
     .section__two__images .section__two__images_bold {
         font-family: Raleway-bold, sans-serif;
