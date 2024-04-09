@@ -8,6 +8,29 @@
 </head>
 <body>
     <header>
+        <div class="drop_down_burger">
+            <div class="drop_down_burger_one">
+                <button id="close"><img src="images/close menu@1x.png" alt="close"></button>
+                <img src="images/logo_dropdown.png" alt="logo" class="dropdown_logo">
+            </div>
+
+            <div class="drop_down_burger_two">
+                <p>Каталог</p>
+                <p>Знижки</p>
+                <p>Блог</p>
+                <p>Про нас</p>
+            </div>
+
+            <div class="drop_down_burger_three">
+                <button class="language_button" onclick="makeBold(this)">UA</button>
+                <button class="language_button" onclick="makeBold(this)">RU</button>
+                <button class="language_button" onclick="makeBold(this)">EN</button>
+                <p>|</p>
+                <button class="currency_button" onclick="makeBolder(this)">₴</button>
+                <button class="currency_button" onclick="makeBolder(this)">$</button>
+                <button class="currency_button" onclick="makeBolder(this)">€</button>
+            </div>
+        </div>
         <div class="container-one">
             <div class="container-one__first-block">
                 
@@ -24,11 +47,11 @@
                    <a href="glavnaya.html"> Про нас </a>
                 </p>
                 
-                <img src="images/burger.png" alt="burger" class="adaptive__burger">
+               <button class="adaptive__burger" id="burger"> <img src="images/burger.png" alt="burger" class="adaptive__burger"> </button>
             </div>
 
             <div class="container-one__second-block">
-                <img src="images/logo_katalog.png" alt="logo" class="container-one__second-block_logo">
+                <img src="images/logo_katalog.png" alt="logo" class="container-one__second-block_logo" id="main_logo">
             </div>
 
             <div class="container-one__third-block">
@@ -251,7 +274,7 @@
 
     <footer>
         <div class="footer__arrow">
-            <img src="images/Vector 20@2x.png" alt="arrow" class="arrow">
+           <a href="#main_logo"> <img src="images/Vector 20@2x.png" alt="arrow" class="arrow"> </a>
         </div>
         <div class="footer__div">
         <img src="images/logo_katalog.png" alt="logog" class="footer__div_logo">
@@ -307,7 +330,9 @@
 
 
 
-
+    <script src="dropdown_burger.js"></script>
     <script src="scroll.js"></script>
     <script src="scroll-2.js"></script>
+    <script src="button_lang.js"></script>
+    <script src="button_currency.js"></script>
     </body>
